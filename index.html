@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System with JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the canteen!</h1>
+    <div class="container">
+        <p class="menu-title">Here are our street foods menu:</p>
+            <ul id="menu">
+                <li>Burger - 60 pesos</li>
+                <li>Fries - 50 pesos</li>
+                <li>Fishbol - 20 pesos</li>
+                <li>Kikiam - 25 pesos</li>
+            </ul>
+        <button id="addFoodBtn">Add a Food Item</button>
+        <div class="input-group">
+            <label for="choice1">Choice:</label>
+            <select id="choice1" class="choice">
+                <option value="Burger">Burger</option>
+                <option value="Fries">Fries</option>
+                <option value="Fishbol">Fishbol</option>
+                <option value="Kikiam">Kikiam</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" class="quantity" min="1" value="1">
+        </div>
+
+        
+        <div id="foodForms"></div>
+        <div class="input-group">
+            <label for="cash">Cash:</label>
+            <input type="number" id="cash" min="0">
+        </div>
+        <button id="payBtn">Pay</button>
+        <div id="changeDisplay" style="display: none;">
+            <h2>Your change:</h2>
+            <p id="change"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

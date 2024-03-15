@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('bg.jpg');
+}
+
+h1 {
+    text-align: center;
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #d8cca6; 
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8); 
+    animation: glowContainer 2s infinite alternate; 
+}
+
+@keyframes glowContainer {
+    0% {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); 
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(52, 152, 219, 0.8); 
+    }
+}
+
+.menu-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: glow 2s infinite alternate; /* Apply glowing effect */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+}
+
+.input-group {
+    margin-bottom: 20px; /* Increase gap between input groups */
+}
+
+.choice,
+.quantity {
+    width: 250px; /* Make inputs wider */
+    padding: 15px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Increase button size */
+button {
+    padding: 15px 30px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+    margin-top: 20px; /* Increase gap between button and text */
+    margin-bottom: 20px; /* Increase gap between button and text */
+}
+
+/* Increase size of cash label */
+.input-group label[for="cash"] {
+    font-size: 20px; /* Increase font size */
+}
+
+/* Increase size of cash input */
+#cash {
+    width: 300px; /* Increase input width */
+    padding: 15px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+}
